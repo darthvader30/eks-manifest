@@ -16,7 +16,7 @@ node {
                         sh "cat Manifest after error handling""
                         sh "git config user.email singhkaran9830@gmail.com"
                         sh "git config user.name darthvader30"
-                        //sh "git switch master"
+                        //sh "git switch master"`
                         sh "cat deployment.yaml"
                         sh "sed -i 's+darthvader4/eks-demo.*+darthvader4/eks-demo:${DOCKERTAG}+g' deployment.yaml"
                         sh "cat deployment.yaml"
